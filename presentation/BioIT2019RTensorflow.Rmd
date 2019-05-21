@@ -1,0 +1,304 @@
+---
+title: <span style="color:#FFFFFF">R for <span style="color:orange">Deep Learning</span> with Tensorflow</span>
+subtitle:  <span style="color:#FFFFFF">Applications in Research & Scientific Computing</span>
+author: <span style="color:#FFFFFF">twitter:@rinpharma github:philbowsher</span>
+output:
+  xaringan::moon_reader:
+    css: "include/rstudio.css"
+    nature:
+      countIncrementalSlides: yes
+      highlightLines: yes
+      highlightStyle: github
+      ratio: 16:9
+resource_files:
+  - include
+  - images
+---
+
+```{r, include=FALSE}
+rmarkdown::output_metadata$set(
+  rsc_output_files = list.files("images/00", recursive = TRUE, full.names = TRUE)
+)
+```
+
+class: subtitle-slide, white, middle, center
+
+# Work based on help from...
+- https://leonjessen.github.io/
+- https://github.com/andrie
+- https://github.com/slopp
+- https://b2slifesciences.com/
+
+---
+
+
+class: panel-narrow-slide, left
+
+# Tooling
+
+- https://tensorflow.rstudio.com/
+- https://keras.rstudio.com/
+- https://rstudio.github.io/reticulate/
+- http://shiny.rstudio.com/
+- https://www.rplumber.io/
+
+---
+
+class: panel-narrow-slide, left
+
+# Books & Resources JJ's Keynote
+
+- Deep Learning with R
+- [Deep Learning with R Notebooks](https://github.com/jjallaire/deep-learning-with-r-notebooks)
+- https://www-bcf.usc.edu/~gareth/ISL/
+- Applied Predictive Modeling
+- https://www.deeplearningbook.org/
+- https://resources.rstudio.com/rstudio-cheatsheets/keras-cheat-sheet
+- https://github.com/Scavetta/conf_tensorflow_training_day1
+- https://github.com/rstudio/conf_tensorflow_training_day2
+
+---
+
+class: panel-narrow-slide, left
+
+# JJ's Keynote
+
+- [JJ's Keynote](https://blog.rstudio.com/2018/02/06/tensorflow-for-r/)
+- "A key motivation for the original S remains as important now: to give easy access to the best computations for understanding data...John Chambers"
+
+---
+
+class: panel-narrow-slide, left
+
+# Interoperability between Python and R
+
+- https://solutions.rstudio.com/examples/python-overview/
+- https://colorado.rstudio.com/rsc/reticulate-demo/demo-notebook.nb.html
+- Demo
+
+---
+
+
+class: panel-narrow-slide, left
+
+# Neural Network in Your Browser
+
+- https://playground.tensorflow.org
+- [An introduction to machine learning with Keras in R](https://theoreticalecology.wordpress.com/2018/06/06/an-introduction-to-machine-learning-with-keras-in-r/)
+
+---
+
+class: panel-narrow-slide, left
+
+# Simple Tensorflow Keras Demo
+
+- Demo
+- https://colorado.rstudio.com/rsc/keras_image_recognition/
+- Rusty
+---
+
+class: panel-narrow-slide, left
+
+# Cancer
+
+- [SKIN CANCER CLASSIFICATION WITH DEEP LEARNING](https://cs.stanford.edu/people/esteva/nature/)"...artificial intelligence capable of classifying skin cancer with a level of competence comparable to dermatologists" "The new algotithm could be turned into a phone app"
+- [Melanoma as a model tumour for immuno-oncology](https://www.ncbi.nlm.nih.gov/pubmed/22918922)"...immunotherapies such as cytokines, adoptive cell transfer and T-cell modulators"
+- https://diputi.com/
+---
+
+class: panel-narrow-slide, left
+
+# Current Investments in Pharma
+- [Machine learning poised to accelerate drug discovery](https://www.novartis.com/stories/discovery/machine-learning-poised-accelerate-drug-discovery)
+- [A multi-scale convolutional neural network for phenotyping high-content cellular images](https://academic.oup.com/bioinformatics/article/33/13/2010/2997285?searchresult=1)
+- [Research Scientist Position](https://jobsearch.lilly.com/san-diego-ca/research-scientist-fde/1B9518E4DE2C421E9430F0181BEE7E2F/job/)
+- [Estimating Individualized Optimal Combination Therapies through Outcome Weighted Deep Learning Algorithms](https://www.researchgate.net/publication/321720003_Estimating_Individualized_Optimal_Combination_Therapies_through_Outcome_Weighted_Deep_Learning_Algorithms)
+---
+
+
+class: panel-narrow-slide, left
+
+# Deep Learning
+- [Opportunities and obstacles for deep learning in biology and medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574/)
+- "Due to its importance in immunity and immune response, peptide-MHC binding prediction is a useful problem in computational biology, and one that must account for the allelic diversity in MHC-encoding gene region."
+
+---
+
+
+class: panel-narrow-slide, left
+
+# Cancer Immunotherapy
+
+- [Immuno-Oncology Therapies and Precision Medicine: Personal Tumor-Specific Neoantigen Prediction by Machine Learning](https://www.ima.umn.edu/materials/2017-2018.4/W9.14-16.17/26402/Sep_16_2017_IMA_Talk_Yi-Hsiang_Hsu_shared_version.pdf)
+---
+
+class: panel-narrow-slide, left
+
+# Cancer Immunotherapy
+- [New Kind of Cancer 'Vaccine' Teaches The Immune System to Destroy Tumours](https://www.sciencealert.com/researchers-turn-tumours-into-self-destructive-vaccine-factories-of-doom)"employing white blood cells to assassinate rogue tissue such as cancer makes perfect sense. Simply 'prime' them with the chemical equivalent of a mug-shot, and off they go in search of their target...isn't a simple affair...For one thing, tumours use a crafty set of disguises called checkpoint blockades. These are signatures on the cell's membrane that tells the immune system it's just a regular old cell just minding its own business"
+---
+
+class: panel-narrow-slide, left
+
+# Cancer Immunotherapy
+
+- [New Cancer Drugs Aim to Offer Alternatives to Chemo](https://www.wsj.com/articles/new-cancer-drugs-aim-to-offer-alternatives-to-chemo-11551284726)"drug is part of an innovative approach to treating certain cancers based on targeting their genetic characteristics."
+- [The cancer immunity cycle](https://www.roche.com/research_and_development/what_we_are_working_on/oncology/cancer-immunotherapy/cancer-immunotherapy-cycle.htm)
+- [Cancer’s Trick for Dodging the Immune System](https://www.nytimes.com/2019/04/04/health/cancer-immunotherapy-effectiveness.html?utm_source=ucsf_tw&utm_medium=tw&utm_campaign=2019_cancer_exosomes&utm_term=)
+
+---
+
+class: panel-narrow-slide, left
+
+# Cancer Immunotherapy
+
+- [MEDICINES IN DEVELOPMENT:IMMUNO-ONCOLOGY](http://phrma-docs.phrma.org/files/dmfile/GoBoldlyImmuno_OncologyReport_2017.pdf)"Different cancer immunotherapies work on the immune system in different ways...facilitate a stronger immune response to cancer, while others show the immune system what cancer looks like so that it can better identify, target & kill....no single accepted definition of immuno-oncology...classes: adoptive cell therapies (including CAR-T therapy), bi-specific antibodies, cytokines, immune checkpoint modulators, oncolytic virus therapies, & vaccines."
+---
+
+class: panel-narrow-slide, left
+
+# Cancer Immunotherapy
+
+- [The Challenge for Development of Valuable Immuno-oncology Biomarkers](https://www.ncbi.nlm.nih.gov/pubmed/28864725)"To optimize immunother-apy use, approaches must be developed to identify which patients are likely to achieve benefit. To minimize therapeutic toxicities & costs, understanding the ideal choice & sequencing of the numerous immuno-oncology agents available for individual patients is thus critical, but fraught with challenges."
+---
+
+class: panel-narrow-slide, left
+
+# Cancer Immunotherapy
+
+- [Nobel Prize in medicine goes to cancer immunotherapy researchers](https://www.washingtonpost.com/national/health-science/nobel-prize-in-medicine-goes-to-cancer-immunotherapy-researchers/2018/10/01/e0ba8448-c55b-11e8-9b1c-a90f1daae309_story.html?noredirect=on&utm_term=.a32d41c21963)
+
+---
+
+
+class: panel-narrow-slide, left
+
+# Demo Modelling Molecular Interactions for Cancer Immunotherapy
+
+- https://blogs.rstudio.com/tensorflow/posts/2018-01-29-dl-for-cancer-immunotherapy/
+- we need to know what are the cancer-targets and which immune cells will hit that target
+- https://solutions.rstudio.com/examples/tensorflow-overview/
+- https://github.com/sol-eng/immunotherapy
+
+---
+
+class: panel-narrow-slide, left
+
+
+# Note about Data
+
+- iedb.org
+- [Deep Learning in Neuroradiology](http://www.ajnr.org/content/early/2018/04/19/ajnr.A5543)"The importance of data-sharing initiatives such as ADNI and the Cancer Imaging Archive cannot be overstated"
+- [Artificial Intelligence Improves Lung Cancer Detection](https://www.itnonline.com/article/artificial-intelligence-improves-lung-cancer-detection)"Sharing Data to Improve AI - The nature of AI has encouraged the owners of large datasets to share their information with the public in an effort to spark further innovation and develop more advanced models."
+---
+
+class: panel-narrow-slide, left
+
+
+# More on Data...
+- [Robust abdominal organ segmentation using regional convolutional neural networks](http://www1.maths.lth.se/matematiklth/vision/publdb/reports/pdf/larsson-kahl-2018.pdf)"The ideal solution to this problem would be to include more images in the training set. This, however, requires more manually segmented CT images which are not always easy to acquire."
+---
+
+class: panel-narrow-slide, left
+
+
+# More on Data..
+
+- [Epigenetic analysis: Giving the right name to a tumor](https://www.sciencedaily.com/releases/2018/03/180315101753.htm)"We have made our classification system available online in order to enable researchers to analyze their data at our platform." The information that will come in this way will at the same time help achieve more precise diagnoses and, thus, better treatment of rarer cancer types."
+---
+
+class: panel-narrow-slide, left
+
+
+# More on Data...
+
+- [Opportunities and obstacles for deep learning in biology and medicine: 2019 update](https://www.biorxiv.org/content/10.1101/142760v2.full)"EHRs are designed chiefly for clinical, administrative and financial purposes, such as patient care, insurance, and billing [134]. Science is at best a tertiary priority, presenting challenges to EHR-based research in general and to deep learning research in particular."
+---
+
+
+class: panel-narrow-slide, left
+
+
+# More on Data...
+
+- [Assessment of a Deep Learning Model Based on Electronic Health Record Data to Forecast Clinical Outcomes in Patients With Rheumatoid Arthritis](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2728001?guestAccessKey=413c7814-70d9-4e45-935d-2595beeff1d7&utm_source=jps&utm_medium=email&utm_campaign=author_alert-jamanetwork&utm_content=author-author_engagement&utm_term=1m)
+- https://stanfordmlgroup.github.io/competitions/mrnet/
+- [Scalable and accurate deep learning for electronic health records](https://arxiv.org/abs/1801.07860)
+---
+
+class: panel-narrow-slide, left
+
+# Collaboration
+
+.pull-left[
+  # [R in Pharma](https://rinpharma.com)
+  ]
+
+---
+
+class: subtitle-slide, white, middle, center
+
+# Appendix: Sample Cancer Analysis with R
+
+- https://christospitsi.github.io/projects/wdbc/
+- https://shirinsplayground.netlify.com/2018/06/intro_to_ml_workshop_heidelberg/
+- https://kieranrcampbell.github.io/blog/2018/11/13/clonealign.html
+
+
+---
+
+class: panel-narrow-slide, left
+
+# Appendix: More Cancer info
+
+- https://www.ncbi.nlm.nih.gov/pubmed/30556813
+- https://arxiv.org/pdf/1709.00152.pdf
+- https://www.biorxiv.org/content/biorxiv/early/2017/06/23/154757.full.pdf
+- https://ai.googleblog.com/2017/03/assisting-pathologists-in-detecting.html
+- https://www.sciencedirect.com/science/article/pii/S0022283618305321
+- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6267763/
+
+---
+
+
+class: panel-narrow-slide, left
+
+# Appendix: Interesting
+
+- [Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs](https://jamanetwork.com/journals/jama/fullarticle/2588763)"there must be collection of a large developmental set with tens of thousands of abnormal cases. While performance on the tuning set saturated at 60000 images, additional gains might be achieved by increasing the diversity of training data (ie, data from new clinics)"
+
+---
+
+class: panel-narrow-slide, left
+
+# Appendix: Interesting
+
+- [Towards automatic pulmonary nodule management in lung cancer screening with deep learning](https://arxiv.org/abs/1610.09157)"We analyze the advantage of processing nodules at multiple scales with a multi-stream convolutional network architecture, and we show that the proposed deep learning system achieves performance at classifying nodule type that surpasses the one of classical machine learning approaches and is within the inter-observer variability among four experienced human observers."
+
+---
+
+class: panel-narrow-slide, left
+
+# Appendix: Interesting
+
+- [Opportunities and obstacles for deep learning in biology and medicine: 2019 update](https://greenelab.github.io/deep-review/)"Deep learning can be applied to answer more fundamental biological questions; it is especially suited to leveraging large amounts of data from high-throughput “omics” studies."
+
+---
+
+class: panel-narrow-slide, left
+
+# Appendix: Interesting
+
+- [Artificial Intelligence in Drug Discovery and Development](https://www.omicsonline.org/open-access/artificial-intelligence-in-drug-discovery-and-development-2329-6887-1000e173-100890.html)"AI appears to be transforming the future of healthcare field but still it has to make an impactful outcome. At present, there are no AI inspired, FDA-approved drugs in the market."
+
+---
+
+class: panel-narrow-slide, left
+
+# Appendix: Interesting
+
+- https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5
+- [A call for deep-learning healthcare](https://www.nature.com/articles/s41591-018-0320-3)
+- [Machine Learning in Medicine](https://www.nejm.org/doi/full/10.1056/NEJMra1814259)
+
+
