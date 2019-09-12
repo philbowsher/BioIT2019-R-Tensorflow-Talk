@@ -2,9 +2,7 @@
 # https://github.com/jasdumas/image-clf-keras-shiny/blob/50ef07e63d9833727efd177ff35fc6e858f84a35/resnet50_example.R
 # https://cran.rstudio.com/web/packages/keras/vignettes/applications.html
 
-
-
-Sys.setenv(TENSORFLOW_PYTHON="~/.virtualenvs/r-tensorflow/bin/python")
+Sys.setenv(RETICULATE_PYTHON="/opt/python/3.7.3/bin/python3")
 library(keras)
 
 use_implementation("keras")
@@ -29,7 +27,6 @@ imagenet_decode_predictions(preds, top = 3)[[1]]
 
 
 
-
 # Other Example not Use
 
 model <- application_mobilenet(weights =  'imagenet')
@@ -38,7 +35,7 @@ model <- application_mobilenet(weights =  'imagenet')
 # load the image
 # img_path <- "F:/Data/pets_data/cats/20160211_200107000_iOS.jpg"
 #img_path <- "F:/Data/pets_data/dogs/IMG_20170920_200039_286.jpg"
-img_path <- "download.jpg"
+img_path <- "pug.jpg"
 img <- image_load(img_path, target_size = c(224,224))
 x <- image_to_array(img)
 
